@@ -1,6 +1,8 @@
 **
 !.gitignore
+!.inputrc
 !.muttrc
+!.profile
 !.tmux.conf
 !.vimrc
 !.xmonad/

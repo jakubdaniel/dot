@@ -1,0 +1,9 @@
+set show-mode-in-prompt on
+
+set editing-mode vi
+
+set keymap vi-insert
+Control-l: clear-screen
+
+set vi-ins-mode-string "\1\033[01;32m\2"
+set vi-cmd-mode-string "\1\033[01;34m\2"
