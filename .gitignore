@@ -1,0 +1,7 @@
+**
+!.gitignore
+!.muttrc
+!.tmux.conf
+!.vimrc
+!.xmonad/
+!.xmonad/xmonad.hs
