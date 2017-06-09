@@ -2,7 +2,7 @@
 
 export GPG_AGENT_INFO_FILE=~/.gpg-agent-info
 
-if [ -f $GPG_AGENT_INFO_FILE ] || tty -s && ! gpg-agent -q
+if tty -s && ! gpg-agent -q
 then
     gpg-agent --quiet --daemon --enable-ssh-support > $GPG_AGENT_INFO_FILE
 fi
@@ -11,5 +11,3 @@ source $GPG_AGENT_INFO_FILE
 export GPG_AGENT_INFO
 export SSH_AUTH_SOCK
 export GPG_TTY=`tty`
-
-#echo GPG agent running on $GPG_TTY

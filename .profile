@@ -1,16 +1,10 @@
 #!/bin/sh
 
+source ~/.gpg-agent
+
 export PATH="$HOME/bin:$PATH"
 
 PS1='\[\033[3D\]λ\[\033[3C\033[00m\]'
-
-export CC=clang
-export CXX=clang
-
-export CLASSPATH="/usr/share/ant-junit/lib/ant-junit.jar"
-
-alias mutt="mutt -e 'source ~/.mutt/default'"
-alias st="st -e bash --rcfile ~/.profile"
 
 if ! tmux has-session
 then
@@ -26,5 +20,3 @@ then
     clear
     exec tmux attach
 fi
-
-#source ~/.gpg-agent
