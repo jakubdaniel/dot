@@ -11,14 +11,14 @@ unignore From To Cc Bcc Date Subject
 unhdr_order *
 hdr_order From: To: Cc: Bcc: Date: Subject:
 
-# set signature = ~/.signature
-
 set mail_check=60
 set imap_keepalive=300
 
 set header_cache=/var/tmp/.mutt
 
 macro index c '<change-folder>=<tab><tab><tab>'
+
+source ~/.mutt/default
 
 set pgp_use_gpg_agent="yes"
 set pgp_decode_command="GPG_TTY=`tty` gpg --use-agent --no-verbose --batch --output - %f"
@@ -37,6 +37,8 @@ set pgp_autosign="yes"
 set pgp_replyencrypt="yes"
 set pgp_timeout="1800"
 set pgp_good_sign="^gpg: Good signature from"
+
+set certificate_file=~/.mutt/certificates
 
 color normal white black
 color hdrdefault green default

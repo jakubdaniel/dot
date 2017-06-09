@@ -1,8 +1,14 @@
 **
 !.ghci
 !.gitignore
+!.gpg-agent
 !.inputrc
 !.muttrc
+!.mutt/
+!.mutt/default
+!.mutt/example.com
+!.mutt/example.com.aliases
+!.mutt/example.com.signature
 !.profile
 !.tmux.conf
 !.vimrc
